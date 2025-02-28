@@ -52,7 +52,7 @@ class ArticlesController < ApplicationController
     @article.destroy!
 
     respond_to do |format|
-      format.html { redirect_to articles_path, status: :see_other, notice: "Article was successfully destroyed." }
+      format.html { redirect_to root_path, status: :see_other, notice: "Article was successfully destroyed." }
       format.json { head :no_content }
     end
   end
